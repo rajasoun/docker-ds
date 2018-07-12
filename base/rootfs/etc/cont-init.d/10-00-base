@@ -1,0 +1,22 @@
+#!/usr/bin/with-contenv sh
+
+user="dev"
+
+USER_ID=${LOCAL_USER_ID:-1000}
+echo "Starting with UID : $USER_ID"
+addgroup -g $USER_ID $user
+adduser -s /bin/false -D -h /home/$user -u $USER_ID -G $user $user
+
+if [ ! -d "/opt/$user/data/$GUUID" ]; then
+	mkdir -p "/opt/$user/data/$GUUID"
+fi
+
+if [ ! -d "/opt/$user/log/$GUUID" ]; then
+	mkdir -p "/opt/$user/log/$GUUID"
+fi
+
+# secure $user
+chown -R $user:$user /opt/$user/data
+chown -R $user:$user /opt/$user/log
+
+
