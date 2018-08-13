@@ -4,7 +4,7 @@ MAINTAINER Raja. S <rajasoun@icloud.com>
 
 ENV PACKAGES curl wget python3 octave gnuplot ttf-opensans ghostscript freetype-dev libpng-dev openblas-dev
 ENV BUILD_ESSENTIAL make gcc g++ gfortran python3-dev 
-ENV PIP_PACKAGE jupyter octave_kernel ipywidgets numpy pandas matplotlib 
+ENV PIP_PACKAGE jupyter octave_kernel ipywidgets numpy scipy pandas matplotlib
 
 COPY jupyter_notebook_config.py /root/.jupyter/jupyter_notebook_config.py
 
