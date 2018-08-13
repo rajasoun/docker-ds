@@ -1,6 +1,6 @@
 image_name = rajasoun/base
 container_name = base_os
 
-VERSION=0.1
+VERSION=1.0
 
 include ../make/Makefile
