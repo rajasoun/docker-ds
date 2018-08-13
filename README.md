@@ -1,4 +1,4 @@
-# docker-ml
+# docker-ds
 Container For Machine Learning Experiments
 
 This is docker image for Python3, Jupyter and Octave, based on alpine linux
