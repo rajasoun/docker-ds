@@ -17,10 +17,18 @@ git clone https://github.com/rajasoun/docker-ds
 docker-compose up  -d
 ```
 
-and visit [http://localhost:8888](http://localhost:8888) for jupyter notebook
+To start Only Jupyter Notebook:
+
+```bash
+docker-compose  up jupyter
+```
+
+visit 
+1. [http://localhost:18888](http://localhost:18888) for jupyter notebook
+2. [http://localhost:18989](http://localhost:18989) for jupyter notebook Viewer
 
 
 
 ### Manage Docker via Web - [Portainer](https://portainer.io/)
 
-Visit [http://localhost:9000](http://localhost:9000) for Docker Management
+Visit [http://localhost:19090](http://localhost:19090) for Docker Management
