@@ -1,4 +1,4 @@
-FROM rajasoun/base:0.1
+FROM rajasoun/base:1.0
 LABEL Vendor="DataScience"
 MAINTAINER Raja. S <rajasoun@icloud.com>
 
