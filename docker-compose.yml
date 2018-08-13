@@ -6,10 +6,37 @@ services:
     image: rajasoun/ds:0.2
     container_name: data_science_py
     ports:
-     - "8888:8888"
+     - "18888:8888"
+    networks:
+      - net     
     volumes:
-      - jupyter_notebooks:/opt      
+      - jupyter_notebooks:/opt   
 
+
+  nbviewer:
+    image: jupyter/nbviewer
+    container_name: nbviewer
+    links:
+      - nbcache
+    ports:
+      - "18989:8080"
+    networks:
+      - net  
+
+  nbcache:
+      image: memcached
+      container_name: memcached
+
+
+  portainer:
+    image: portainer/portainer
+    container_name: portainer
+    ports:
+      - "19090:9000"
+    networks:
+      - net
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
 
 volumes:
   jupyter_notebooks:
@@ -17,3 +44,9 @@ volumes:
       type: none
       device: $PWD/notebooks
       o: bind
+
+
+networks:
+  net:
+    driver: bridge
+

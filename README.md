@@ -19,3 +19,8 @@ docker-compose up  -d
 
 and visit [http://localhost:8888](http://localhost:8888) for jupyter notebook
 
+
+
+### Manage Docker via Web - [Portainer](https://portainer.io/)
+
+Visit [http://localhost:9000](http://localhost:9000) for Docker Management
