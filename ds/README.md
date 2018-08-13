@@ -7,7 +7,7 @@ This is docker image for Python3, Jupyter and Octave, based on alpine linux
 You can run the command below:
 
 ```bash
-docker-compose -f -d octave.yml up
+docker-compose -f -d ds.yml up
 ```
 
 and visit [http://localhost:8888](http://localhost:8888) for jupyter notebook

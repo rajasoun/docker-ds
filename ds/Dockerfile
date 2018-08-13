@@ -1,5 +1,5 @@
 FROM rajasoun/base:0.1
-LABEL Vendor="Octave"
+LABEL Vendor="DataScience"
 MAINTAINER Raja. S <rajasoun@icloud.com>
 
 ENV PACKAGES curl python3 octave gnuplot ttf-opensans ghostscript
