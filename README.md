@@ -13,7 +13,7 @@ Useful packages included:
 You can run the command below:
 
 ```bash
-git clone https://github.com/rajasoun/docker-ml
+git clone https://github.com/rajasoun/docker-ds
 docker-compose up  -d
 ```
 
