@@ -10,7 +10,7 @@ services:
     networks:
       - net     
     volumes:
-      - jupyter_notebooks:/opt   
+      - ./notebooks:/opt
 
 
   nbviewer:
@@ -37,14 +37,6 @@ services:
       - net
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-
-volumes:
-  jupyter_notebooks:
-    driver_opts:
-      type: none
-      device: $PWD/notebooks
-      o: bind
-
 
 networks:
   net:
